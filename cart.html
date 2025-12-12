@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div>
+            <nav>
+                <div class=" logo">Coffee <span>.</span></div>
+                <div class="nav-links">
+                    <div class="menu-close" id="menu-icon-close">
+                        &times;
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#coffee">Coffee</a></li>
+                    <li><a href="index.html#customers">Customers</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#newsletter">Newsletter</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-quantity">1</span></a></li>
+                </div>
+                <div class="menu-open" id="menu-icon-open">&#9776;</div>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="cart-hero">
+        <div class="cart-hero-content">
+            <h4>Review your items</h4>
+            <p>Great Choices! Let’s Wrap This Up</p>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="cart-details">
+            <div class="cart-title">Your order</div>
+            <div class="cart-container">
+                <div class="cart-content">
+                    <div class="cart">
+                        <!-- <table>
+                            <tr class="thead">
+                                <div class="head-details">
+                                    <li class="hdet product-data">Product Name</li>
+                                    <li class="hdet quality">Quantity</li>
+                                    <li class="hdet total">Total</li>
+                                    <li class="hdet action">Action</li>
+                                </div>
+                                
+                            </tr>
+
+                            <tr class="cart-items">
+                                <div class="items">
+                                    <div class="product-data">
+                                        <div class="product-img">
+                                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"
+                                                alt="">
+                                        </div>
+                                        <div class="product-name-description">
+                                            <h4 class="product-name">Coffee Name</h4>
+                                            <p class="product-description">Brief description of the coffee product.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="quanity" id="value"><input type="number" name="" id=""></div>
+                                    </div>
+                                    <div>
+                                        <div class="price">$100</div>
+                                    </div>
+                                    <div>
+                                        <div class="delete">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tr>
+
+                        </table> -->
+                        <div class="cart-items-title">
+                            <li class="hdet product-data">Product Name</li>
+                            <li class="hdet quantity">Quantity</li>
+                            <li class="hdet total">Total</li>
+                            <li class="hdet action">Action</li>
+                        </div>
+                        <div class="cart-itmes">
+                            <!--render cart items-->
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3 class="summary-title">Order Summary</h3>
+                    <div class="summary-item">
+                        <p class="category">Items Quantity</p>
+                        <p class="cat-value" id="cart-value">3 Items</p>
+                    </div>
+                    <div class="summary-item">
+                        <p class="category">Sub Total</p>
+                        <p class="cat-value sub-total" id="sub-total">$370</p>
+                    </div>
+                    <div class="summary-item">
+                        <p class="category">Tax</p>
+                        <p class="cat-value tax" id="tax">$5</p>
+                    </div>
+                    <div class="summary-item">
+                        <p class="category">Total</p>
+                        <p class="cat-value total" id="total">$500</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p class="ifno"><span>90 Day Limited Warranty</span>against manufacturers defets <a href="#"
+                                class="info-details">details</a></p>
+                    </div>
+                    <div class="checkout">
+                        <button id="checkout" class="checkout-btn">Checkout Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container-fluid">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <h2 class="footer-title">Coffee <span>.</span></h2>
+                <p class="footer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-title">Quick Links</h2>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="#coffee" class="footer-link">Coffee</a>
+                <a href="#customers" class="footer-link">Customers</a>
+                <a href="#contact" class="footer-link">Contact</a>
+                <a href="#newsletter" class="footer-link">Newsletter</a>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-title">Contact Info</h2>
+                <p class="footer-para">123 Coffee St, New York, NY 10001</p>
+                <p class="footer-para">Email: cofffe@drinks.com</p>
+                <p class="footer-para">Phone: +1 234 567 890</p>
+                <p class="footer-para">Fax: +1 234 567 891</p>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="footer-para">Subscribe to our newsletter to get the latest updates.</p>
+                <form action="#" class="footer-form">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
